@@ -1,0 +1,122 @@
+.App {
+  font-family: "Open sans";
+  text-align: center;
+  color: #fdd45d;
+}
+
+body {
+  font-size: 1.2rem;
+  font-family: "Lato";
+  background: #1a4621;
+}
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+.result {
+  margin-top: 20px;
+}
+
+.options {
+  cursor: pointer;
+  position: relative;
+  text-align: center;
+  font-size: 3vw;
+  border: 2px solid black;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+  display: inline-block;
+  padding: 10px;
+  width: 400px;
+  height: 100ew;
+  border-radius: 30px;
+  transition: all 0.3s ease 0s;
+}
+.options:hover {
+  background: #fdd45d;
+  color: #1a4621;
+  transform: translateY(-7px);
+  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.5);
+}
+.options:active {
+  top: 1px;
+}
+
+.selected {
+  background: #fdd45d;
+  color: #1a4621;
+}
+.button {
+  border-color: black;
+  text-align: center;
+  font-size: 3vw;
+  padding: 10px;
+  transition: 0.5s;
+  cursor: pointer;
+  width: 50vw;
+  height: 100ew;
+  border-radius: 30px;
+  background: #1a4621;
+  color: #fdd45d;
+  position: relative;
+  margin-top: 20px;
+  display: inline-block;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
+.button:after {
+  content: "»";
+  display: inline-block;
+  position: absolute;
+  opacity: 0;
+  top: 10px;
+  right: -5px;
+  transition: 0.5s;
+}
+
+.button:hover {
+  padding-right: 24px;
+  padding-left: 8px;
+  background: #fdd45d;
+  color: #1a4621;
+  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.5);
+  transform: translateY(-7px);
+}
+
+.button:hover:after {
+  opacity: 1;
+  right: 50px;
+}
+.refresh {
+  border-color: black;
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 10px;
+  transition: 0.5s;
+  cursor: pointer;
+  width: 40%;
+  height: 100ew;
+  border-radius: 30px;
+  background: #1a4621;
+  color: #fdd45d;
+  position: relative;
+  margin-top: 20px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
+.refresh:hover {
+  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.5);
+  transform: translateY(-7px);
+}
+.done {
+  cursor: pointer;
+  position: relative;
+  text-align: center;
+  border: 2px solid black;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+  display: inline-block;
+  padding: 10px;
+  width: 60%;
+  height: 100ew;
+  border-radius: 30px;
+  margin: 19.2px;
+  font-size: 1.2rem;
+}
